@@ -1,0 +1,75 @@
+.experience {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f9fbe7, #e3f2fd); /* Matches the theme */
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .experience-card {
+    background: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 800px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .experience-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .company-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  
+  .company-name {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 0;
+  }
+  
+  .role {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .duration-location {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    white-space: pre-line; /* Preserve newlines */
+    margin-top: 1rem;
+  }
+  

@@ -1,42 +1,93 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Global Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Default text color */
+  line-height: 1.6; /* Improve readability */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Section Styling */
+.section {
+  padding: 4rem 2rem;
   text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.section:last-child {
+  border-bottom: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Headings */
+h1, h2 {
+  margin-bottom: 1rem;
+  color: #007BFF; /* Blue color for headings */
+  font-weight: bold;
+}
+
+/* Home Image Styling */
+.home-image img {
+  max-width: 300px; /* Limit image size */
+  border-radius: 15px; /* Rectangular image with rounded corners */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.home-image img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+/* Box Sizing */
+* {
+  box-sizing: border-box; /* Include padding and borders in width/height */
+}
+
+/* Main Content Styling */
+main {
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+/* Main Content Expanded */
+.main-content {
+  flex: 1; /* Automatically adjust to remaining space */
+  height: 100vh; /* Ensure full-screen height */
+  margin-left: 280px; /* Match sidebar width */
+  padding: 2rem;
+  overflow-y: auto; /* Add vertical scrolling for content overflow */
+  box-sizing: border-box; /* Include padding in height/width calculations */
+  transition: margin-left 0.3s ease; /* Smooth transition for sidebar changes */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    margin-left: 220px; /* Adjust for smaller sidebar width */
   }
-  to {
-    transform: rotate(360deg);
+
+  .home-image img {
+    max-width: 200px; /* Reduce image size on smaller screens */
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .section {
+    padding: 2rem 1rem; /* Reduce padding for smaller screens */
   }
-}
 
-.card {
-  padding: 2em;
-}
+  h1, h2 {
+    font-size: 1.5rem; /* Reduce heading size for smaller screens */
+  }
 
-.read-the-docs {
-  color: #888;
+  .main-content {
+    margin-left: 60px; /* Adjust for smaller screens when sidebar is collapsed */
+  }
 }

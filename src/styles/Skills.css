@@ -1,0 +1,121 @@
+/* Skills Section */
+.skills {
+  min-height: calc(100vh - 60px); /* Full height of the viewport */
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f9fbe7, #e3f2fd); /* Clean gradient background */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.skills-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 2rem;
+  text-transform: uppercase; /* Add uppercase for emphasis */
+  font-weight: bold;
+}
+
+.skills-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.skills-category {
+  flex: 1 1 30%;
+  background: #ffffff;
+  border: 2px solid #007bff;
+  border-radius: 15px; /* Rounded corners for a modern look */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.skills-category:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.skills-category h3 {
+  font-size: 1.8rem; /* Slightly larger heading */
+  color: #007bff;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem; /* Increase spacing */
+  font-weight: bold;
+}
+
+.skills-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Space out items */
+}
+
+.skills-category li {
+  font-size: 1.2rem; /* Slightly larger font size */
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add scale effect on hover */
+}
+
+.skills-category li:hover {
+  color: #007bff;
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.skills-icon {
+  width: 60px; /* Larger icon size */
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .skills{
+    padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    min-height: auto; /* Remove fixed height */
+  }
+  .skills-content {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .skills-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-category {
+    flex: 1 1 100%; /* Full width for smaller screens */
+    padding: 1.5rem; /* Reduce padding for compact screens */
+  }
+
+  .skills-category h3 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .skills-category li {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .skills-icon {
+    width: 50px; /* Adjust icon size for smaller screens */
+    height: 50px;
+  }
+}

@@ -1,0 +1,146 @@
+/* Home Section Styling */
+.home {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e3f2fd, #f9fbe7); /* Clean gradient background */
+  width: 100%; /* Ensure it spans full width */
+  box-sizing: border-box !; /* Include padding in height/width calculations */
+  overflow: hidden; /* Prevent unwanted scrolling */
+}
+
+/* Home Content Styling */
+.home-content {
+  display: flex;
+  justify-content: space-between; /* Space out text and image */
+  align-items: center;
+  max-width: 1200px; /* Constrain content width */
+  width: 100%;
+  gap: 2rem; /* Add spacing between text and image */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Text Section Styling */
+.home-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically align the text */
+  text-align: left; /* Align text to the left */
+}
+
+.home-text h1 {
+  font-size: 3rem; /* Adjusted heading size */
+  color: #007bff; /* Blue heading color */
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.home-text p {
+  font-size: 1.2rem; /* Adjusted paragraph size */
+  margin-bottom: 1rem;
+  color: #555; /* Neutral paragraph color */
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #007bff; /* Highlight text */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.highlight:hover {
+  color: #0056b3; /* Change highlight color on hover */
+}
+
+.cta-button {
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+  transform: scale(1.1); /* Zoom button on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Section Styling */
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image img {
+  max-width: 400px; /* Set a fixed width for the image */
+  width: 100%;
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 15px; /* Slightly rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-image img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 1400px) {
+  .home-content {
+    max-width: 1400px; /* Expand content for larger screens */
+  }
+
+  .home-text h1 {
+    font-size: 4rem; /* Increase heading size */
+  }
+
+  .home-text p {
+    font-size: 1.5rem; /* Increase paragraph size */
+  }
+
+  .home-image img {
+    max-width: 500px; /* Increase image size */
+  }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column; /* Stack content vertically */
+    padding: 1rem; /* Reduce padding for smaller screens */
+    min-height: auto;
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .home-content {
+    text-align: center; /* Center-align content */
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .home-text {
+    margin-bottom: 2rem;
+    text-align: center; /* Center-align text on smaller screens */
+  }
+
+  .home-text h1 {
+    font-size: 2.5rem; /* Reduce heading size */
+  }
+
+  .home-text p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .home-image img {
+    max-width: 300px; /* Reduce image size */
+  }
+}

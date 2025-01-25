@@ -1,0 +1,86 @@
+.projects {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #e3f2fd, #f9fbe7);
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .project-card {
+    background: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 800px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-tech,
+  .project-date {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 1rem 0;
+    white-space: pre-line; /* Preserve newlines */
+  }
+  
+  .project-link {
+    display: inline-block;
+    color: #ffffff;
+    background: #007bff;
+    text-decoration: none;
+    padding: 0.3rem 0.7rem; /* Smaller padding for button */
+    border-radius: 5px;
+    font-size: 0.85rem; /* Smaller font size */
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .project-card {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .project-content {
+      text-align: center;
+    }
+  }
+  
