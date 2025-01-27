@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
+import { FiExternalLink } from "react-icons/fi"; // Import an external link icon
 import profileImage from "../assets/profile.jpeg"; 
 
 const Home = () => {
@@ -17,6 +18,17 @@ const Home = () => {
           <p>
             My expertise spans <span className="highlight_1">full-stack development</span>, <span className="highlight_1">AI-powered systems</span>, and <span className="highlight_1">advanced algorithms</span>. Notable projects include a <span className="highlight_1">food delivery app with AI chatbot integration</span> and a <span className="highlight_1">personalized news categorization system</span> utilizing NLP models.
           </p>
+          <div className="home-buttons">
+            <a
+              href="/Abhinav_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-button"
+            >
+              <FiExternalLink style={{ marginRight: "0.5rem" }} /> {/* Icon */}
+              View Resume
+            </a>
+          </div>
         </div>
 
         {/* Image Section */}
