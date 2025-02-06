@@ -37,6 +37,18 @@ const Projects = () => {
       link: "https://github.com/Abhinav8520/Remote-sensing",
     },
     {
+      title: "Protein-Protein Interaction Classification",
+      tech: "Python, Biopython, Scikit-Learn, XGBoost",
+      date: "February 2024",
+      description: `
+      - Preprocessed a balanced dataset of 73,000 protein interaction pairs, ensuring bias-free model training through data cleaning, labeling, shuffling, and standard scaling.
+      - Engineered a feature extraction pipeline using Biopython, computing 7 key features such as sequence length, molecular weight, amino acid composition, and secondary structure fractions.
+      - Designed and evaluated three classification models (SVM, Random Forest, XGBoost), achieving 97.77% test accuracy with XGBoost, outperforming other models.
+      - Analyzed feature importance using Random Forest and XGBoost, identifying coil fractions, sheet fractions, molecular weight, and sequence lengths as the most significant factors in PPI classification.
+      `,
+      link: "https://github.com/Abhinav8520/PPI-prediction", 
+    },
+    {
       title: "Twitter Clone Development",
       tech: "Python, Django, HTML, CSS, Bootstrap",
       date: "November 2023",
