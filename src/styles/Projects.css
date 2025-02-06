@@ -19,6 +19,7 @@
     align-items: center;
   }
   
+  
   .project-card {
     background: #ffffff;
     border: 2px solid #007bff;
@@ -28,6 +29,10 @@
     max-width: 800px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 250px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .project-card:hover {
@@ -52,7 +57,10 @@
     color: #333;
     line-height: 1.5;
     margin: 1rem 0;
-    white-space: pre-line; /* Preserve newlines */
+    white-space: pre-line;
+    max-height: 4.5rem; /* Limits to ~3 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .project-link {

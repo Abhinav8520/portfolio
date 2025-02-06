@@ -6,20 +6,20 @@ const Experience = () => {
   const internships = [
     {
       company: "The Hackett Group",
-      role: "Project Trainee",
+      role: "Intern",
       location: "Hyderabad, India",
       duration: "March 2023 - April 2023",
       logo: hackettLogo,
       description: `
-      • Cultivated practical Machine Learning expertise through projects such as Sentiment Analysis to interpret customer sentiments and Market Mix Modeling to understand sales drivers, enhancing analytical problem-solving capabilities.
-      • Completed a project on identifying employee stress triggers, utilizing data analytic tools to highlight potential stress factors, and laying the groundwork for ongoing research on workplace wellness.
+      • Gained practical Machine Learning expertise through projects such as Sentiment Analysis using around 500 customer reviews to interpret sentiments and Market Mix Modeling to analyze around 10 key sales drivers.
+      • Completed a project analyzing around 100 employee records to identify stress triggers, utilizing data analytic tools to highlight potential stress factors, contributing to ongoing research on workplace wellness.
       `,
     },
   ];
 
   return (
     <section id="experience" className="experience">
-      <h2 className="section-title">Internship</h2>
+      <h2 className="section-title">Experience</h2>
       <div className="experience-container">
         {internships.map((internship, index) => (
           <div key={index} className="experience-card">
