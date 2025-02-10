@@ -2,9 +2,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9; /* Light background */
-  color: #333; /* Default text color */
-  line-height: 1.6; /* Improve readability */
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -22,26 +22,26 @@ body {
 /* Headings */
 h1, h2 {
   margin-bottom: 1rem;
-  color: #007BFF; /* Blue color for headings */
+  color: #007BFF;
   font-weight: bold;
 }
 
 /* Home Image Styling */
 .home-image img {
-  max-width: 300px; /* Limit image size */
-  border-radius: 15px; /* Rectangular image with rounded corners */
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-image img:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+  transform: scale(1.1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Box Sizing */
 * {
-  box-sizing: border-box; /* Include padding and borders in width/height */
+  box-sizing: border-box;
 }
 
 /* Main Content Styling */
@@ -53,13 +53,13 @@ main {
 
 /* Main Content Expanded */
 .main-content {
-  flex: 1; /* Automatically adjust to remaining space */
-  height: 100vh; /* Ensure full-screen height */
+  flex: 1;
+  min-height: 100vh; /* Full height of the viewport */
   margin-left: 280px; /* Match sidebar width */
   padding: 2rem;
   overflow-y: auto; /* Add vertical scrolling for content overflow */
-  box-sizing: border-box; /* Include padding in height/width calculations */
-  transition: margin-left 0.3s ease; /* Smooth transition for sidebar changes */
+  box-sizing: border-box;
+  transition: margin-left 0.3s ease;
 }
 
 .app-container {
@@ -69,7 +69,7 @@ main {
   width: 100%;
 }
 
-/* Responsive Design */
+/* Sidebar Adjustments for Responsive Layouts */
 @media (max-width: 768px) {
   main {
     margin-left: 220px; /* Adjust for smaller sidebar width */
@@ -89,5 +89,28 @@ main {
 
   .main-content {
     margin-left: 60px; /* Adjust for smaller screens when sidebar is collapsed */
+    padding: 1rem; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    margin-left: 0; /* No sidebar on very small screens */
+  }
+
+  .home-image img {
+    max-width: 150px; /* Further reduce image size */
+  }
+
+  h1, h2 {
+    font-size: 1.2rem; /* Smaller headings for mobile */
+  }
+
+  .section {
+    padding: 1rem 0.5rem; /* Minimal padding for smallest screens */
+  }
+
+  .main-content {
+    padding: 1rem; /* Further reduce padding */
   }
 }

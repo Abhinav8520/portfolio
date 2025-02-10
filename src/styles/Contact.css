@@ -54,12 +54,26 @@
   /* Responsive Design */
   @media (max-width: 768px) {
     .contact-list {
-      flex-direction: column; /* Stack items vertically on smaller screens */
+      flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+      justify-content: center;
       gap: 1rem;
     }
   
     .contact-item {
       font-size: 1rem;
+      width: 45%; /* Allow two items per row */
+      text-align: center;
+    }
+  
+    .contact-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-item {
+      width: 100%; /* Full width on very small screens */
     }
   }
   

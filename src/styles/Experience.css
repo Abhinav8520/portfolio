@@ -73,3 +73,55 @@
     margin-top: 1rem;
   }
   
+  @media (max-width: 768px) {
+    .experience-card {
+      padding: 1.5rem;
+      width: 90%;
+    }
+  
+    .experience-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .company-logo {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .company-name {
+      font-size: 1.3rem;
+    }
+  
+    .role {
+      font-size: 1rem;
+    }
+  
+    .duration-location {
+      font-size: 0.9rem;
+    }
+  
+    .description {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Very Small Screens (Mobile) */
+  @media (max-width: 480px) {
+    .experience-card {
+      width: 100%;
+    }
+  
+    .company-logo {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .company-name {
+      font-size: 1.2rem;
+    }
+  
+    .role {
+      font-size: 0.95rem;
+    }
+  }

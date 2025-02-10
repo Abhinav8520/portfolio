@@ -82,13 +82,50 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .project-card {
-      flex-direction: column;
-      padding: 1rem;
+    .projects {
+      padding: 2rem 1rem;
     }
   
-    .project-content {
-      text-align: center;
+    .project-card {
+      max-width: 100%; /* Use full width on smaller screens */
+      padding: 1rem; /* Reduce padding */
+    }
+  
+    .project-title {
+      font-size: 1.3rem; /* Reduce font size */
+    }
+  
+    .project-description {
+      font-size: 0.9rem; /* Adjust font size for readability */
+      max-height: none; /* Allow descriptions to grow naturally */
+      overflow: visible;
+    }
+  
+    .project-link {
+      padding: 0.5rem 1rem; /* Adjust button size */
+      font-size: 0.85rem;
     }
   }
   
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 2rem; /* Reduce title size */
+    }
+  
+    .project-card {
+      padding: 0.8rem; /* Further reduce padding for mobile */
+    }
+  
+    .project-title {
+      font-size: 1.2rem;
+    }
+  
+    .project-description {
+      font-size: 0.85rem;
+    }
+  
+    .project-link {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }

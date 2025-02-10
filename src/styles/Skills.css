@@ -2,8 +2,8 @@
 .skills {
   min-height: calc(100vh - 60px); /* Full height of the viewport */
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f9fbe7, #e3f2fd); /* Clean gradient background */
-  box-sizing: border-box; /* Include padding in height calculation */
+  background: linear-gradient(135deg, #f9fbe7, #e3f2fd);
+  box-sizing: border-box;
 }
 
 .skills-content {
@@ -16,7 +16,7 @@
   font-size: 2.5rem;
   color: #007bff;
   margin-bottom: 2rem;
-  text-transform: uppercase; /* Add uppercase for emphasis */
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -24,30 +24,30 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 2rem;
+  gap: 2rem; /* Space between categories */
 }
 
 .skills-category {
   flex: 1 1 30%;
   background: #ffffff;
   border: 2px solid #007bff;
-  border-radius: 15px; /* Rounded corners for a modern look */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
 
 .skills-category:hover {
-  transform: scale(1.05); /* Slight zoom effect */
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .skills-category h3 {
-  font-size: 1.8rem; /* Slightly larger heading */
+  font-size: 1.8rem;
   color: #007bff;
   margin-top: 1rem;
-  margin-bottom: 1.5rem; /* Increase spacing */
+  margin-bottom: 1.5rem;
   font-weight: bold;
 }
 
@@ -58,22 +58,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem; /* Space out items */
+  gap: 1rem;
 }
 
 .skills-category li {
-  font-size: 1.2rem; /* Slightly larger font size */
+  font-size: 1.2rem;
   color: #333;
-  transition: color 0.3s ease, transform 0.3s ease; /* Add scale effect on hover */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .skills-category li:hover {
   color: #007bff;
-  transform: scale(1.1); /* Slight zoom effect */
+  transform: scale(1.1);
 }
 
 .skills-icon {
-  width: 60px; /* Larger icon size */
+  width: 60px;
   height: 60px;
   object-fit: contain;
   margin-bottom: 1rem;
@@ -81,41 +81,65 @@
 }
 
 .skills-icon:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .skills{
-    padding: 2rem 1rem; /* Reduce padding for smaller screens */
-    min-height: auto; /* Remove fixed height */
+  .skills {
+    padding: 2rem 1rem; /* Reduce padding */
+    min-height: auto;
   }
+
   .skills-content {
-    flex-direction: column; /* Stack content vertically */
-    text-align: center; /* Center-align text */
+    text-align: center;
   }
 
   .skills-categories {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack categories vertically */
+    gap: 1.5rem; /* Reduce gaps between categories */
   }
 
   .skills-category {
-    flex: 1 1 100%; /* Full width for smaller screens */
-    padding: 1.5rem; /* Reduce padding for compact screens */
+    flex: 1 1 100%; /* Full width */
+    padding: 1.5rem; /* Reduce padding */
   }
 
   .skills-category h3 {
-    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    font-size: 1.5rem; /* Adjust heading size */
   }
 
   .skills-category li {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 1rem; /* Adjust list font size */
   }
 
   .skills-icon {
-    width: 50px; /* Adjust icon size for smaller screens */
-    height: 50px;
+    width: 50px;
+    height: 50px; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem; /* Reduce title size */
+    margin-bottom: 1.5rem;
+  }
+
+  .skills-category {
+    padding: 1rem; /* Further reduce padding */
+  }
+
+  .skills-category h3 {
+    font-size: 1.4rem;
+  }
+
+  .skills-category li {
+    font-size: 0.9rem; /* Further adjust list font size */
+  }
+
+  .skills-icon {
+    width: 40px;
+    height: 40px; /* Further reduce icon size */
   }
 }
