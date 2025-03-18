@@ -9,14 +9,14 @@ const Home = () => {
       <div className="home-content">
         {/* Text Section */}
         <div className="home-text">
-          <h1>
+        <h1>
             Hi, I'm <span className="highlight">Abhinav Kapavarapu</span>
           </h1>
           <p>
-            I am a graduate student pursuing a <span className="highlight_1">Master’s in Computer and Information Science and Engineering</span> at the <span className="highlight_1">University of Florida</span>, with a solid foundation in <span className="highlight_1">Electronics and Communication Engineering.</span>
+            I am a passionate <span className="highlight_1">AI/ML Engineer</span> and <span className="highlight_1">Full-Stack Developer</span>, currently pursuing a <span className="highlight_1">Master’s in Computer and Information Science and Engineering</span> at the <span className="highlight_1">University of Florida</span>. My background in <span className="highlight_1">Electronics and Communication Engineering</span> provides a strong foundation for computational problem-solving.
           </p>
           <p>
-            My expertise spans <span className="highlight_1">full-stack development</span>, <span className="highlight_1">AI-powered systems</span>, and <span className="highlight_1">advanced algorithms</span>. Notable projects include a <span className="highlight_1">food delivery app with AI chatbot integration</span> and a <span className="highlight_1">personalized news categorization system</span> utilizing NLP models.
+            My expertise lies in building <span className="highlight_1">AI-driven applications</span>, developing <span className="highlight_1">scalable machine learning models</span>, and crafting <span className="highlight_1">intelligent systems</span> that integrate seamlessly into real-world applications. Notable projects include an <span className="highlight_1">AI-powered food delivery app with chatbot integration</span> and a <span className="highlight_1">personalized news categorization system</span> leveraging NLP and deep learning.
           </p>
           <div className="home-buttons">
             <a
