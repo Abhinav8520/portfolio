@@ -4,6 +4,17 @@ import "../styles/Projects.css";
 const Projects = () => {
   const projects = [
     {
+      title: "Research Paper Summarization and Query Answering System",
+      tech: "Python, T5-small, FAISS, GPT-3.5, spaCy",
+      date: "February 2025",
+      description: `
+      - Fine-tuned T5-small on 75,000 Arxiv documents for abstractive summarization.
+      - Integrated Retrieval-Augmented Generation (RAG) with FAISS for improved summary relevance.
+      - Used GPT-3.5 to generate context-aware answers based on the retrieved summaries, with preprocessing done by spaCy.
+      `,
+      link: "https://github.com/Abhinav8520/Reseach-paper-project"
+    },
+    {
       title: "Food Delivery Web Application",
       tech: "React, HTML, CSS, Node.js, Express, MongoDB",
       date: "October 2024",
