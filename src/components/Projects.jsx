@@ -4,13 +4,28 @@ import "../styles/Projects.css";
 const Projects = () => {
   const projects = [
     {
+      title: "AI Study Tutor Agent",
+      tech: "Python, FastAPI, React, OpenAI, FAISS",
+      date: "July 2025",
+      description: `
+      - Developed an AI tutor with FastAPI backend and React frontend for document-based Q&A and quiz generation across 3 file formats.
+      - Spearheaded RAG using Sentence Transformers and FAISS, enabling sub-second semantic search over embedded text chunks.
+      - Integrated GPT-3.5-turbo for contextual answers and auto-generated 50+ MCQs with adaptive feedback.
+      - Tracked progress via Firebase Firestore to identify weak topics, boosting concept revision by 2x.
+      - Deployed full-stack app on Render.com with scalable FastAPI and React services for real-time, cross-platform access.
+      `,
+      link: "https://github.com/Abhinav8520/AI-Tutor-Agent"
+    },
+    {
       title: "Research Paper Summarization and Query Answering System",
       tech: "Python, T5-small, FAISS, GPT-3.5, spaCy",
       date: "February 2025",
       description: `
-      - Fine-tuned T5-small on 75,000 Arxiv documents for abstractive summarization.
-      - Integrated Retrieval-Augmented Generation (RAG) with FAISS for improved summary relevance.
-      - Used GPT-3.5 to generate context-aware answers based on the retrieved summaries, with preprocessing done by spaCy.
+      - Fine-tuned T5-small on 75k documents for abstracted summarization using step size 3e-4, batch size 4, for 3 epochs.
+      - Achieved ROUGE-1: 16.68 and ROUGE-2: 5.84, indicating strong summary generation.
+      - Designed RAG using FAISS and Sentence-Transformer embeddings for fast, context-aware summary retrieval.
+      - Enhanced summary quality and contextual relevance by integrating retriever-generated context with OpenAI GPT-3.5.
+      - Launched an interactive QA system with spaCy-powered pre-processing and a lightweight Streamlit interface.
       `,
       link: "https://github.com/Abhinav8520/Reseach-paper-project"
     },
@@ -19,9 +34,11 @@ const Projects = () => {
       tech: "React, HTML, CSS, Node.js, Express, MongoDB",
       date: "October 2024",
       description: `
-      - Built a responsive frontend with React and CSS for an engaging user experience.
-      - Developed secure APIs using Node.js and Express for seamless backend functionality.
-      - Integrated an AI chatbot with OpenAI GPT-3.5 Turbo for personalized food recommendations.
+      - Designed a responsive UI in React, HTML, and CSS with menu filtering, checkout flow, and an engaging homepage.
+      - Developed backend services using Node.js, Express, and MongoDB Atlas with scalable RESTful APIs.
+      - Implemented secure JWT-based authentication and role-based authorization for protected user operations.
+      - Deployed the frontend on Vercel and backend on Railway for seamless, cloud-based accessibility.
+      - Integrated an AI chatbot using GPT-3.5 Turbo to deliver personalized food suggestions and real-time support.
       `,
       link: "https://github.com/Abhinav8520/Food-delivery",
     },

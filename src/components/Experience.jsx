@@ -8,11 +8,14 @@ const Experience = () => {
       company: "The Hackett Group",
       role: "Intern",
       location: "Hyderabad, India",
-      duration: "March 2023 - April 2023",
+      duration: "March 2023 - June 2023",
       logo: hackettLogo,
       description: `
-      • Gained practical Machine Learning expertise through projects such as Sentiment Analysis using around 500 customer reviews to interpret sentiments and Market Mix Modeling to analyze around 10 key sales drivers.
-      • Completed a project analyzing around 100 employee records to identify stress triggers, utilizing data analytic tools to highlight potential stress factors, contributing to ongoing research on workplace wellness.
+      • Built end-to-end ML solutions incl. Sentiment Analysis on 500+ reviews and Market Mix Modeling with 10+ sales drivers.
+      • Cleaned and processed complex business datasets using advanced feature engineering to improve model performance.
+      • Implemented diverse NLP techniques to boost accuracy and interpretability in customer review analysis.
+      • Installed end-to-end ML backend on AWS EC2 as RESTful APIs to enable scalable, production-grade access.
+      • Analyzed cross-sectional employee data to uncover key stress-related factors impacting workplace dynamics.
       `,
     },
   ];

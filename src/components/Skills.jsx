@@ -15,10 +15,10 @@ const Skills = () => {
       <div className="skills-content">
         <h2 className="section-title" data-aos="fade-up">Skills</h2>
         <div className="skills-categories">
-          {/* Languages */}
+          {/* Programming Languages */}
           <div className="skills-category" data-aos="zoom-in">
             <img src={languagesIcon} alt="Languages Icon" className="skills-icon" />
-            <h3>Languages</h3>
+            <h3>Programming Languages</h3>
             <ul>
               <li>Python</li>
               <li>C</li>
@@ -28,33 +28,82 @@ const Skills = () => {
               <li>JavaScript</li>
             </ul>
           </div>
-          {/* Web Frameworks and Databases */}
+          {/* Web Development */}
           <div className="skills-category" data-aos="zoom-in">
-            <img src={frameworksIcon} alt="Frameworks Icon" className="skills-icon" />
-            <h3>Web Frameworks & Databases</h3>
+            <img src={frameworksIcon} alt="Web Development Icon" className="skills-icon" />
+            <h3>Web Development</h3>
             <ul>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>React</li>
-              <li>Django</li>
               <li>HTML</li>
               <li>CSS</li>
-              <li>MongoDB</li>
-              <li>MySQL</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
             </ul>
           </div>
-          {/* Tools and Cloud Technologies */}
+          {/* Backend Frameworks */}
           <div className="skills-category" data-aos="zoom-in">
-            <img src={toolsIcon} alt="Tools Icon" className="skills-icon" />
-            <h3>Tools & Cloud Technologies</h3>
+            <img src={frameworksIcon} alt="Backend Frameworks Icon" className="skills-icon" />
+            <h3>Backend Frameworks</h3>
+            <ul>
+              <li>FastAPI</li>
+              <li>Django</li>
+              <li>JWT</li>
+              <li>Axios</li>
+            </ul>
+          </div>
+          {/* Machine Learning */}
+          <div className="skills-category" data-aos="zoom-in">
+            <img src={toolsIcon} alt="Machine Learning Icon" className="skills-icon" />
+            <h3>Machine Learning</h3>
+            <ul>
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+              <li>Scikit-learn</li>
+              <li>TensorFlow</li>
+              <li>PyTorch</li>
+              <li>OpenCV</li>
+              <li>Hugging Face</li>
+              <li>FAISS</li>
+              <li>RAG</li>
+            </ul>
+          </div>
+          {/* Cloud & DevOps */}
+          <div className="skills-category" data-aos="zoom-in">
+            <img src={toolsIcon} alt="Cloud & DevOps Icon" className="skills-icon" />
+            <h3>Cloud & DevOps</h3>
             <ul>
               <li>AWS</li>
               <li>IBM Cloud</li>
+              <li>Firebase</li>
+              <li>Docker</li>
+              <li>Render</li>
+              <li>Vercel</li>
+              <li>Railway</li>
+            </ul>
+          </div>
+          {/* Databases & Tools */}
+          <div className="skills-category" data-aos="zoom-in">
+            <img src={toolsIcon} alt="Databases & Tools Icon" className="skills-icon" />
+            <h3>Databases & Tools</h3>
+            <ul>
+              <li>MongoDB</li>
+              <li>MySQL</li>
               <li>GitHub</li>
               <li>VS Code</li>
               <li>Postman</li>
-              <li>Android Studio</li>
               <li>Microsoft Office</li>
+            </ul>
+          </div>
+          {/* Certifications */}
+          <div className="skills-category" data-aos="zoom-in">
+            <img src={toolsIcon} alt="Certifications Icon" className="skills-icon" />
+            <h3>Certifications</h3>
+            <ul>
+              <li>AWS Certified Cloud Practitioner</li>
+              <li>NVIDIA Certified - Building Transformer-Based NLP Applications</li>
+              <li>NVIDIA Certified - Fundamentals of Deep Learning</li>
             </ul>
           </div>
         </div>
@@ -62,6 +111,5 @@ const Skills = () => {
     </section>
   );
 };
-
 
 export default Skills;

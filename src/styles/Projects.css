@@ -29,10 +29,9 @@
     max-width: 800px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 250px; /* Adjust height as needed */
+    min-height: 300px; /* Minimum height for consistency */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   
   .project-card:hover {
@@ -58,9 +57,7 @@
     line-height: 1.5;
     margin: 1rem 0;
     white-space: pre-line;
-    max-height: 4.5rem; /* Limits to ~3 lines */
-    overflow: hidden;
-    text-overflow: ellipsis;
+    flex-grow: 1; /* Allow description to expand naturally */
   }
   
   .project-link {
@@ -97,8 +94,7 @@
   
     .project-description {
       font-size: 0.9rem; /* Adjust font size for readability */
-      max-height: none; /* Allow descriptions to grow naturally */
-      overflow: visible;
+      flex-grow: 1; /* Allow description to expand naturally */
     }
   
     .project-link {

@@ -8,9 +8,9 @@ const Education = () => {
     {
       institution: "University of Florida",
       location: "Gainesville, FL",
-      duration: "Aug 2023 – Aug 2025",
+      duration: "Aug 2023 – May 2025",
       degree: "Masters in Computer and Information Science and Engineering",
-      cgpa: "CGPA: 3.92/4.0",
+      cgpa: "CGPA: 3.93/4.0",
       logo: ufLogo,
     },
     {
