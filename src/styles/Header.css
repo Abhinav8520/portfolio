@@ -57,6 +57,14 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .header {
+    padding: 0.3rem 0;
+  }
+  
+  .nav {
+    padding: 0 1rem;
+  }
+  
   .nav-list {
     justify-content: center;
     gap: 1rem; /* Reduce spacing */
@@ -73,14 +81,23 @@
 }
 
 @media (max-width: 480px) {
+  .header {
+    padding: 0.2rem 0;
+  }
+  
+  .nav {
+    padding: 0 0.5rem;
+  }
+  
   .nav-list {
     flex-direction: column; /* Stack items vertically */
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
   .nav-link {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-align: center;
+    padding: 0.3rem 0.5rem;
   }
 
   .nav-icon {

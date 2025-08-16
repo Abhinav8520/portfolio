@@ -121,25 +121,34 @@
 }
 
 @media (max-width: 480px) {
+  .skills {
+    padding: 1.5rem 0.8rem;
+  }
+  
   .section-title {
-    font-size: 2rem; /* Reduce title size */
+    font-size: 1.8rem; /* Reduce title size */
     margin-bottom: 1.5rem;
   }
 
   .skills-category {
     padding: 1rem; /* Further reduce padding */
+    margin: 0 0.5rem;
   }
 
   .skills-category h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .skills-category li {
-    font-size: 0.9rem; /* Further adjust list font size */
+    font-size: 0.85rem; /* Further adjust list font size */
   }
 
   .skills-icon {
-    width: 40px;
-    height: 40px; /* Further reduce icon size */
+    width: 35px;
+    height: 35px; /* Further reduce icon size */
+  }
+  
+  .skills-categories {
+    gap: 1rem;
   }
 }

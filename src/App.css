@@ -6,6 +6,18 @@ body {
   color: #333;
   line-height: 1.6;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  -webkit-text-size-adjust: 100%; /* Prevent text scaling on iOS */
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+}
+
+/* Touch-friendly improvements */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth scrolling for mobile */
+html {
+  scroll-behavior: smooth;
 }
 
 /* Section Styling */

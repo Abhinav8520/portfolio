@@ -86,6 +86,7 @@
     .project-card {
       max-width: 100%; /* Use full width on smaller screens */
       padding: 1rem; /* Reduce padding */
+      margin: 0 0.5rem;
     }
   
     .project-title {
@@ -104,24 +105,35 @@
   }
   
   @media (max-width: 480px) {
+    .projects {
+      padding: 1.5rem 0.5rem;
+    }
+    
     .section-title {
-      font-size: 2rem; /* Reduce title size */
+      font-size: 1.8rem; /* Reduce title size */
     }
   
     .project-card {
       padding: 0.8rem; /* Further reduce padding for mobile */
+      margin: 0 0.3rem;
     }
   
     .project-title {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
   
     .project-description {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
+      line-height: 1.4;
     }
   
     .project-link {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       padding: 0.4rem 0.8rem;
+    }
+    
+    .project-tech,
+    .project-date {
+      font-size: 0.9rem;
     }
   }

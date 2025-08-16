@@ -53,6 +53,14 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
+    .contact-footer {
+      padding: 1.5rem 0.8rem;
+    }
+    
+    .contact-title {
+      font-size: 1.8rem;
+    }
+    
     .contact-list {
       flex-wrap: wrap; /* Ensure items wrap on smaller screens */
       justify-content: center;
@@ -72,8 +80,27 @@
   }
   
   @media (max-width: 480px) {
+    .contact-footer {
+      padding: 1rem 0.5rem;
+    }
+    
+    .contact-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    
+    .contact-list {
+      gap: 0.8rem;
+    }
+    
     .contact-item {
       width: 100%; /* Full width on very small screens */
+      font-size: 0.9rem;
+    }
+    
+    .contact-icon {
+      width: 25px;
+      height: 25px;
     }
   }
   
