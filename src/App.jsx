@@ -7,6 +7,7 @@ import "./App.css";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         {/* Add other sections */}
       </main>
       <Contact />
+      <Analytics />
     </div>
   );
 }
